@@ -1,0 +1,181 @@
+<!--
+Ejercicio 3: Crea una encuesta dirigida a estudiantes de Desarrollo Web.
+Debe preguntar:
+Nivel de HTML, mediante un select:
+• Principiante. (nivel=principiante)
+• Medio. (nivel=medio)
+• Avanzado. (nivel=avanzado)
+Tecnologías que conoce, pudiendo marcar varias:
+• HTML. (tecnologias=html)
+• CSS. (tecnologias=css)
+• JavaScript. (tecnologias=javascript)
+• PHP. (tecnologias=php)
+• Java. (tecnologias=java)
+• SQL. (tecnologias=sql)
+Entorno de desarrollo preferido, pudiendo elegir solo uno:
+• Visual Studio Code. (entorno=vscode)
+• NetBeans. (entorno=netbeans)
+• IntelliJ. (entorno=intellij)
+• Eclipse. (entorno=eclipse)
+• Otro. (entorno=otro)
+Incluye además un textarea para responder a:
+¿Qué tecnología te gustaría aprender próximamente? (aprender=)
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Encuesta de Desarrollo Web</title>
+</head>
+
+<body>
+
+    <h1>Encuesta de Desarrollo Web</h1>
+
+    <form action="servidor.php" method="post">
+
+        <!-- Nivel de HTML -->
+        <label for="nivel">Nivel de HTML:</label>
+
+        <select id="nivel" name="nivel">
+
+            <option value="principiante">Principiante</option>
+            <option value="medio">Medio</option>
+            <option value="avanzado">Avanzado</option>
+
+        </select>
+
+        <br><br>
+
+
+        <!-- Tecnologías que conoce -->
+        <p>Tecnologías que conoce:</p>
+
+        <input type="checkbox"
+               id="html"
+               name="tecnologias"
+               value="html">
+
+        <label for="html">HTML</label>
+
+        <br>
+
+        <input type="checkbox"
+               id="css"
+               name="tecnologias"
+               value="css">
+
+        <label for="css">CSS</label>
+
+        <br>
+
+        <input type="checkbox"
+               id="javascript"
+               name="tecnologias"
+               value="javascript">
+
+        <label for="javascript">JavaScript</label>
+
+        <br>
+
+        <input type="checkbox"
+               id="php"
+               name="tecnologias"
+               value="php">
+
+        <label for="php">PHP</label>
+
+        <br>
+
+        <input type="checkbox"
+               id="java"
+               name="tecnologias"
+               value="java">
+
+        <label for="java">Java</label>
+
+        <br>
+
+        <input type="checkbox"
+               id="sql"
+               name="tecnologias"
+               value="sql">
+
+        <label for="sql">SQL</label>
+
+        <br><br>
+
+
+        <!-- Entorno de desarrollo preferido -->
+        <p>Entorno de desarrollo preferido:</p>
+
+        <input type="radio"
+               id="vscode"
+               name="entorno"
+               value="vscode">
+
+        <label for="vscode">Visual Studio Code</label>
+
+        <br>
+
+        <input type="radio"
+               id="netbeans"
+               name="entorno"
+               value="netbeans">
+
+        <label for="netbeans">NetBeans</label>
+
+        <br>
+
+        <input type="radio"
+               id="intellij"
+               name="entorno"
+               value="intellij">
+
+        <label for="intellij">IntelliJ</label>
+
+        <br>
+
+        <input type="radio"
+               id="eclipse"
+               name="entorno"
+               value="eclipse">
+
+        <label for="eclipse">Eclipse</label>
+
+        <br>
+
+        <input type="radio"
+               id="otro"
+               name="entorno"
+               value="otro">
+
+        <label for="otro">Otro</label>
+
+        <br><br>
+
+
+        <!-- Tecnología que quiere aprender -->
+        <label for="aprender">
+            ¿Qué tecnología te gustaría aprender próximamente?
+        </label>
+
+        <br>
+
+        <textarea id="aprender"
+                  name="aprender"
+                  rows="5"
+                  cols="40"></textarea>
+
+        <br><br>
+
+
+        <!-- Botón -->
+        <button type="submit">Enviar encuesta</button>
+
+    </form>
+
+</body>
+
+</html>

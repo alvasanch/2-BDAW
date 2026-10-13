@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Solicitud de beca de estudios</title>
+</head>
+
+<body>
+
+    <h1>Reserva de una experiencia de aventura</h1>
+
+    <form>
+
+        <fieldset>
+
+            <legend>Reserva</legend>
+
+            <label for="nombre">Nombre y Apellidos</label>
+            <input type="text" name="nombre" required>
+
+            <br><br>
+
+            <label for="email">Correo electronico</label>
+            <input type="text" name="email" required>
+
+            <br><br>
+
+            <label for="date">Fecha de la actividad:</label>
+            <input type="date" name="date">
+
+            <br><br>
+
+            <label for="time">Hora de llegada:</label>
+            <input type="time" name="time">
+
+            <br><br>
+
+            <label for="number">Numero de participantes:</label>
+            <input type="number" max="8" min="1" name="number">
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+
+            <legend>Elige tu experiencia</legend>
+
+            <p>Actividad:</p>
+
+
+            <input type="radio"
+                   name="kayak"
+                   value="1">
+
+            <label for="primero">Ruta en Kayak</label>
+
+            <br>
+
+            <input type="radio"
+                   name="ferrata"
+                   value="2">
+
+            <label for="segundo">Via ferrata</label> 
+
+            <br>
+
+            <input type="radio"
+                   name="senderismo"
+                   value="3">
+
+            <label for="segundo">Senderismo</label> <br><br>
+
+            <label for="duracion">Duracion:</label>
+
+            <select name="duracion">
+
+                <option value="media">
+                    Media jornada
+                </option>
+
+                <option value="completa">
+                    Joranada completa
+                </option>
+
+                <option value="finsemana">
+                    Fin de semana
+                </option>
+
+            </select>
+
+
+
+        </fieldset>
+
+        <br>
+
+
+
+        <fieldset>
+
+            <legend>Material y servicios</legend>
+
+            <input type="checkbox"
+                   name="material"
+                   value="material">
+
+            <label for="material">
+                Alquiler de material
+            </label>
+
+            <br>
+
+            <input type="checkbox"
+                   name="fotografia"
+                   value="fotografia">
+
+            <label for="fotografia">
+                Reportaje fotografico
+            </label>
+
+            <br>
+
+            <input type="checkbox"
+                   name="transporte"
+                   value="transporte">
+
+            <label for="transporte">
+                Transporte desde Malaga
+            </label>
+
+            <br>
+
+            <input type="checkbox"
+                   name="almuerzo"
+                   value="almuerzo">
+
+            <label for="almuerzo">
+                Almuerzo
+            </label>
+
+            <br>
+            <p>Nivel de intensidad:</p>
+            <progress value="2.5" max="5"></progress>
+
+        </fieldset>
+
+        <br>
+
+
+
+        <fieldset>
+
+            <legend>Informacion adicional</legend>
+
+            <p>
+                Alergias, necesidades especiales u otra informacion
+            </p>
+
+        <br>
+
+        <textarea name="informacion"
+                  rows="6"
+                  cols="50"></textarea>
+
+        </fieldset>
+
+    </form>
+
+
+    <h2>Estado de la reserva</h2>
+            <p>Datos completados:</p>
+            <meter value="7" min="0" max="10">
+             8,2 sobre 10
+            </meter>
+
+            <br><br>
+
+            <button type="submit">
+                Realizar reserva
+            </button>
+
+            <button type="reset">
+                Borrar formulario
+            </button>
+
+
+
+</body>
+
+</html>

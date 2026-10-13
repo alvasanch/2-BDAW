@@ -1,0 +1,181 @@
+/*
+Ejercicio 6: Crea una página denominada “Catálogo de portátiles” que contenga
+una tabla con 5 productos.
+Para cada producto muestra:
+• Imagen.
+• Nombre.
+• Características principales mediante una lista no ordenada dentro de una
+celda.
+• Precio.
+• Un enlace “Más información”.
+La imagen del producto también debe funcionar como enlace (al mismo sitio que
+más información).
+Más información debe ir a una página independiente en html para cada
+producto (puede estar vacía)
+*/
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo de portátiles</title>
+</head>
+<body>
+
+    <h1>Catálogo de portátiles</h1>
+
+    <table border="1">
+        <caption>Catálogo de portátiles</caption>
+
+        <!-- Encabezados -->
+        <tr>
+            <th>Imagen</th>
+            <th>Nombre</th>
+            <th>Características principales</th>
+            <th>Precio</th>
+            <th>Más información</th>
+        </tr>
+
+        <!-- Producto 1 -->
+        <tr>
+            <td>
+                <a href="portatil1.html">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/HP_Pavilion_15-eh0000sl.jpg"
+                         alt="HP Pavilion 15"
+                         width="150">
+                </a>
+            </td>
+
+            <td>HP Pavilion 15</td>
+
+            <td>
+                <ul>
+                    <li>Intel Core i5</li>
+                    <li>16 GB de RAM</li>
+                    <li>512 GB SSD</li>
+                    <li>Pantalla 15.6"</li>
+                </ul>
+            </td>
+
+            <td>749 €</td>
+
+            <td>
+                <a href="portatil1.html">Más información</a>
+            </td>
+        </tr>
+
+        <!-- Producto 2 -->
+        <tr>
+            <td>
+                <a href="portatil2.html">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Asus_VivoBook_15.jpg"
+                         alt="ASUS Vivobook 14"
+                         width="150">
+                </a>
+            </td>
+
+            <td>ASUS Vivobook 14</td>
+
+            <td>
+                <ul>
+                    <li>AMD Ryzen 5</li>
+                    <li>8 GB de RAM</li>
+                    <li>512 GB SSD</li>
+                    <li>Pantalla 14"</li>
+                </ul>
+            </td>
+
+            <td>599 €</td>
+
+            <td>
+                <a href="portatil2.html">Más información</a>
+            </td>
+        </tr>
+
+        <!-- Producto 3 -->
+        <tr>
+            <td>
+                <a href="portatil3.html">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/MacBook_Air_M2_2022.jpg"
+                         alt="MacBook Air"
+                         width="150">
+                </a>
+            </td>
+
+            <td>Apple MacBook Air</td>
+
+            <td>
+                <ul>
+                    <li>Chip Apple M1</li>
+                    <li>8 GB de RAM</li>
+                    <li>256 GB SSD</li>
+                    <li>Pantalla Retina 13.3"</li>
+                </ul>
+            </td>
+
+            <td>1.099 €</td>
+
+            <td>
+                <a href="portatil3.html">Más información</a>
+            </td>
+        </tr>
+
+        <!-- Producto 4 -->
+        <tr>
+            <td>
+                <a href="portatil4.html">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Lenovo_IdeaPad_3.jpg"
+                         alt="Lenovo IdeaPad 3"
+                         width="150">
+                </a>
+            </td>
+
+            <td>Lenovo IdeaPad 3</td>
+
+            <td>
+                <ul>
+                    <li>Intel Core i7</li>
+                    <li>16 GB de RAM</li>
+                    <li>1 TB SSD</li>
+                    <li>Pantalla 15.6"</li>
+                </ul>
+            </td>
+
+            <td>699 €</td>
+
+            <td>
+                <a href="portatil4.html">Más información</a>
+            </td>
+        </tr>
+
+        <!-- Producto 5 -->
+        <tr>
+            <td>
+                <a href="portatil5.html">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/ASUS_ROG_Strix_G15.jpg"
+                         alt="ASUS ROG Strix G15"
+                         width="150">
+                </a>
+            </td>
+
+            <td>ASUS ROG Strix G15</td>
+
+            <td>
+                <ul>
+                    <li>AMD Ryzen 7</li>
+                    <li>16 GB de RAM</li>
+                    <li>1 TB SSD</li>
+                    <li>Pantalla 15.6" 144 Hz</li>
+                </ul>
+            </td>
+
+            <td>1.299 €</td>
+
+            <td>
+                <a href="portatil5.html">Más información</a>
+            </td>
+        </tr>
+
+    </table>
+
+</body>
+</html>

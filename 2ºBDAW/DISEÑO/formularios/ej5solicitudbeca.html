@@ -1,0 +1,252 @@
+<!--
+Ejercicio 5: Crea un formulario para solicitar una beca de estudios.
+Organízalo en cuatro fieldset.
+Datos del solicitante
+• Nombre. (nombre=..)
+• Apellidos. (apellidos=..)
+• DNI. (dni=..)
+• Fecha de nacimiento. (nacimiento=..)
+• Correo. (correo=..)
+• Teléfono. (teléfono=..)
+Datos académicos
+• Ciclo que estudia mediante select a elegir entre:
+• Desarrollo de Aplicaciones Web (ciclo=daw)
+• Desarrollo de Aplicaciones Multiplataforma (ciclo=dam)
+• Administración de Sistemas Informáticos en Red (ciclo=asir)
+• Curso: primero o segundo mediante radio. (curso=1, curso=2)
+Ejercicios Diseño de Interfaces
+Repaso HTML 7
+• Nota media, permitiendo valores entre 0 y 10 con valores decimales
+(nota=..)
+• Centro educativo. (centro=….)
+Situación
+• Casillas independientes para indicar:
+o Familia numerosa. (situacion=familia)
+o Discapacidad reconocida. (situacion=discapacidad)
+o Desplazamiento fuera de la localidad. (situación=desplazamiento)
+o Necesidad de alojamiento. (situación=alojamiento)
+Después del formulario muestra:
+• Un <progress> indicando que se ha completado el 75 % de la solicitud.
+• Un <meter> que represente una nota media de 8,2 sobre 10.
+Incluye los botones Enviar solicitud y Borrar datos.
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Solicitud de beca de estudios</title>
+</head>
+
+<body>
+
+    <h1>Solicitud de beca de estudios</h1>
+
+    <form>
+
+        <!-- 1. DATOS DEL SOLICITANTE -->
+        <fieldset>
+
+            <legend>Datos del solicitante</legend>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <br><br>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos">
+
+            <br><br>
+
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni">
+
+            <br><br>
+
+            <label for="nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="nacimiento" name="nacimiento">
+
+            <br><br>
+
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo">
+
+            <br><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+
+        </fieldset>
+
+        <br>
+
+
+        <!-- 2. DATOS ACADÉMICOS -->
+        <fieldset>
+
+            <legend>Datos académicos</legend>
+
+            <label for="ciclo">Ciclo que estudia:</label>
+
+            <select id="ciclo" name="ciclo">
+
+                <option value="daw">
+                    Desarrollo de Aplicaciones Web
+                </option>
+
+                <option value="dam">
+                    Desarrollo de Aplicaciones Multiplataforma
+                </option>
+
+                <option value="asir">
+                    Administración de Sistemas Informáticos en Red
+                </option>
+
+            </select>
+
+            <br><br>
+
+
+            <p>Curso:</p>
+
+            <input type="radio"
+                   id="primero"
+                   name="curso"
+                   value="1">
+
+            <label for="primero">Primero</label>
+
+            <br>
+
+            <input type="radio"
+                   id="segundo"
+                   name="curso"
+                   value="2">
+
+            <label for="segundo">Segundo</label>
+
+            <br><br>
+
+
+            <label for="nota">Nota media:</label>
+
+            <input type="number"
+                   id="nota"
+                   name="nota"
+                   min="0"
+                   max="10"
+                   step="0.1">
+
+            <br><br>
+
+
+            <label for="centro">Centro educativo:</label>
+
+            <input type="text"
+                   id="centro"
+                   name="centro">
+
+        </fieldset>
+
+        <br>
+
+
+        <!-- 3. SITUACIÓN -->
+        <fieldset>
+
+            <legend>Situación</legend>
+
+            <input type="checkbox"
+                   id="familia"
+                   name="situacion"
+                   value="familia">
+
+            <label for="familia">
+                Familia numerosa
+            </label>
+
+            <br>
+
+            <input type="checkbox"
+                   id="discapacidad"
+                   name="situacion"
+                   value="discapacidad">
+
+            <label for="discapacidad">
+                Discapacidad reconocida
+            </label>
+
+            <br>
+
+            <input type="checkbox"
+                   id="desplazamiento"
+                   name="situacion"
+                   value="desplazamiento">
+
+            <label for="desplazamiento">
+                Desplazamiento fuera de la localidad
+            </label>
+
+            <br>
+
+            <input type="checkbox"
+                   id="alojamiento"
+                   name="situacion"
+                   value="alojamiento">
+
+            <label for="alojamiento">
+                Necesidad de alojamiento
+            </label>
+
+        </fieldset>
+
+        <br>
+
+
+        <!-- 4. RESUMEN -->
+        <fieldset>
+
+            <legend>Resumen de la solicitud</legend>
+
+            <p>
+                Revise los datos antes de enviar la solicitud.
+            </p>
+
+            <button type="submit">
+                Enviar solicitud
+            </button>
+
+            <button type="reset">
+                Borrar datos
+            </button>
+
+        </fieldset>
+
+    </form>
+
+
+    <!-- PROGRESO -->
+    <h2>Estado de la solicitud</h2>
+
+    <p>
+        Solicitud completada al 75 %:
+    </p>
+
+    <progress value="75" max="100">
+        75%
+    </progress>
+
+
+    <!-- NOTA MEDIA -->
+    <p>
+        Nota media: 8,2 sobre 10
+    </p>
+
+    <meter value="8.2" min="0" max="10">
+        8,2 sobre 10
+    </meter>
+
+</body>
+
+</html>

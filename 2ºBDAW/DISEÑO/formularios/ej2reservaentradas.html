@@ -1,0 +1,123 @@
+<!--
+Ejercicio 2: Crea un formulario para reservar entradas para un concierto.
+Debe permitir indicar:
+• Nombre y apellidos. (nombre=…)
+• Correo electrónico. (correo=..)
+• Fecha del concierto. (fecha=..)
+• Número de entradas, permitiendo seleccionar entre 1 y 6. Inicialmente 1
+(entradas=..)
+• Tipo de entrada mediante botones de radio:
+o General. (tipo=general)
+o Premium. (tipo=premium)
+o VIP. (tipo=vip)
+• Si desea recibir las entradas por correo electrónico mediante un
+checkbox. (envio=on)
+• Botón Realizar reserva.
+Solo debe poder seleccionarse un tipo de entrada.
+Aunque no se especifique siempre hay que indicar el nombre del campo que se
+enviará al servidor
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva de entradas</title>
+</head>
+
+<body>
+
+    <h1>Reserva de entradas para el concierto</h1>
+
+    <form action="servidor.php" method="post">
+
+        <!-- Nombre y apellidos -->
+        <label for="nombre">Nombre y apellidos:</label>
+        <input type="text"
+               id="nombre"
+               name="nombre">
+
+        <br><br>
+
+        <!-- Correo electrónico -->
+        <label for="correo">Correo electrónico:</label>
+        <input type="email"
+               id="correo"
+               name="correo">
+
+        <br><br>
+
+        <!-- Fecha del concierto -->
+        <label for="fecha">Fecha del concierto:</label>
+        <input type="date"
+               id="fecha"
+               name="fecha">
+
+        <br><br>
+
+        <!-- Número de entradas -->
+        <label for="entradas">Número de entradas:</label>
+
+        <select id="entradas" name="entradas">
+
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+
+        </select>
+
+        <br><br>
+
+        <!-- Tipo de entrada -->
+        <p>Tipo de entrada:</p>
+
+        <input type="radio"
+               id="general"
+               name="tipo"
+               value="general">
+
+        <label for="general">General</label>
+
+        <br>
+
+        <input type="radio"
+               id="premium"
+               name="tipo"
+               value="premium">
+
+        <label for="premium">Premium</label>
+
+        <br>
+
+        <input type="radio"
+               id="vip"
+               name="tipo"
+               value="vip">
+
+        <label for="vip">VIP</label>
+
+        <br><br>
+
+        <!-- Envío por correo electrónico -->
+        <input type="checkbox"
+               id="envio"
+               name="envio"
+               value="on">
+
+        <label for="envio">
+            Deseo recibir las entradas por correo electrónico
+        </label>
+
+        <br><br>
+
+        <!-- Botón -->
+        <button type="submit">Realizar reserva</button>
+
+    </form>
+
+</body>
+
+</html>

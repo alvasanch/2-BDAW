@@ -1,0 +1,179 @@
+/*
+Ejercicio 7: Crea una página denominada “Guía turística de Málaga”.
+Al principio debe aparecer una lista con al menos 5 lugares de interés. Cada
+elemento será un enlace que permita saltar directamente a la sección
+correspondiente de la misma página.
+Cada lugar tendrá un encabezado, una imagen, una breve descripción y un enlace
+“Volver al inicio”.
+Al final incluye un enlace a una web externa donde pueda obtenerse más
+información turística.
+*/
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Guía turística de Málaga</title>
+</head>
+
+<body id="inicio">
+
+    <h1>Guía turística de Málaga</h1>
+
+    <p>Descubre algunos de los lugares más interesantes de la ciudad de Málaga.</p>
+
+    <!-- Lista de lugares -->
+    <h2>Lugares de interés</h2>
+
+    <ul>
+        <li>
+            <a href="#alcazaba">Alcazaba de Málaga</a>
+        </li>
+
+        <li>
+            <a href="#teatro">Teatro Romano</a>
+        </li>
+
+        <li>
+            <a href="#catedral">Catedral de Málaga</a>
+        </li>
+
+        <li>
+            <a href="#picasso">Museo Picasso</a>
+        </li>
+
+        <li>
+            <a href="#malagueta">Playa de La Malagueta</a>
+        </li>
+    </ul>
+
+
+    <!-- Lugar 1 -->
+    <hr>
+
+    <section id="alcazaba">
+
+        <h2>Alcazaba de Málaga</h2>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Alcazaba_de_M%C3%A1laga_2019.jpg"
+             alt="Alcazaba de Málaga"
+             width="400">
+
+        <p>
+            La Alcazaba de Málaga es una fortaleza de origen musulmán
+            construida durante la época de Al-Ándalus. Se encuentra
+            junto al monte Gibralfaro y ofrece unas magníficas vistas
+            de la ciudad.
+        </p>
+
+        <a href="#inicio">Volver al inicio</a>
+
+    </section>
+
+
+    <!-- Lugar 2 -->
+    <hr>
+
+    <section id="teatro">
+
+        <h2>Teatro Romano</h2>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Teatro_Romano_de_M%C3%A1laga.jpg"
+             alt="Teatro Romano de Málaga"
+             width="400">
+
+        <p>
+            El Teatro Romano de Málaga es uno de los monumentos más
+            antiguos de la ciudad. Fue construido en época romana
+            y se encuentra a los pies de la Alcazaba.
+        </p>
+
+        <a href="#inicio">Volver al inicio</a>
+
+    </section>
+
+
+    <!-- Lugar 3 -->
+    <hr>
+
+    <section id="catedral">
+
+        <h2>Catedral de Málaga</h2>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Catedral_de_M%C3%A1laga.jpg"
+             alt="Catedral de Málaga"
+             width="400">
+
+        <p>
+            La Catedral de Málaga, conocida popularmente como
+            "La Manquita", es uno de los edificios religiosos más
+            importantes de la ciudad. Su construcción comenzó en
+            el siglo XVI.
+        </p>
+
+        <a href="#inicio">Volver al inicio</a>
+
+    </section>
+
+
+    <!-- Lugar 4 -->
+    <hr>
+
+    <section id="picasso">
+
+        <h2>Museo Picasso Málaga</h2>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Museo_Picasso_Malaga.jpg"
+             alt="Museo Picasso Málaga"
+             width="400">
+
+        <p>
+            El Museo Picasso Málaga está dedicado a Pablo Picasso,
+            uno de los artistas más importantes del siglo XX,
+            nacido en Málaga. El museo alberga una importante
+            colección de sus obras.
+        </p>
+
+        <a href="#inicio">Volver al inicio</a>
+
+    </section>
+
+
+    <!-- Lugar 5 -->
+    <hr>
+
+    <section id="malagueta">
+
+        <h2>Playa de La Malagueta</h2>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Playa_de_La_Malagueta.jpg"
+             alt="Playa de La Malagueta"
+             width="400">
+
+        <p>
+            La playa de La Malagueta es una de las playas más
+            conocidas de Málaga. Está situada cerca del centro
+            histórico y es un lugar muy popular para disfrutar
+            del mar y del clima de la ciudad.
+        </p>
+
+        <a href="#inicio">Volver al inicio</a>
+
+    </section>
+
+
+    <!-- Información turística -->
+    <hr>
+
+    <h2>Más información turística</h2>
+
+    <p>
+        Puedes obtener más información sobre Málaga en la página
+        oficial de turismo de la ciudad:
+    </p>
+
+    <a href="https://www.malagaturismo.com/" target="_blank">
+        Turismo de Málaga
+    </a>
+
+</body>
+</html>

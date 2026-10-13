@@ -1,0 +1,220 @@
+<!--
+Ejercicio 4: Crea un formulario para configurar la compra de un portátil.
+Utiliza <fieldset> y <legend> para separar el formulario en los siguientes
+bloques:
+Datos del cliente
+• Nombre. (nombre=..)
+• Correo electrónico. (correo=..)
+• Teléfono. (teléfono=..)
+Configuración del portátil
+Procesador, mediante botones de radio:
+• Intel Core i5. (procesador=i5)
+Ejercicios Diseño de Interfaces
+Repaso HTML 5
+• Intel Core i7. (procesador=i7)
+• AMD Ryzen 7. (procesador=ryzen7)
+•
+Memoria RAM mediante select:
+• 8 GB. (ram=8)
+• 16 GB. (ram=16)
+• 32 GB. (ram=32)
+Extras mediante checkbox:
+• Ratón inalámbrico. (extras=raton)
+• Mochila. (extras=mochila)
+• Disco externo. (extras=disco)
+• Ampliación de garantía. (extras=garantia)
+Entrega
+• Fecha de entrega deseada. (fecha=..)
+• Franja horaria mediante select: mañana o tarde. (franja=mañana,
+franja=tarde)
+• Dirección de entrega mediante textarea. (dirección=…)
+Incluye finalmente los botones Realizar pedido y Restablecer.
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Compra de portátil</title>
+</head>
+
+<body>
+
+    <h1>Configuración de compra de un portátil</h1>
+
+    <form action="servidor.php" method="post">
+
+        <!-- DATOS DEL CLIENTE -->
+        <fieldset>
+
+            <legend>Datos del cliente</legend>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text"
+                   id="nombre"
+                   name="nombre">
+
+            <br><br>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email"
+                   id="correo"
+                   name="correo">
+
+            <br><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel"
+                   id="telefono"
+                   name="telefono">
+
+        </fieldset>
+
+        <br>
+
+
+        <!-- CONFIGURACIÓN DEL PORTÁTIL -->
+        <fieldset>
+
+            <legend>Configuración del portátil</legend>
+
+            <!-- Procesador -->
+            <p>Procesador:</p>
+
+            <input type="radio"
+                   id="i5"
+                   name="procesador"
+                   value="i5">
+
+            <label for="i5">Intel Core i5</label>
+
+            <br>
+
+            <input type="radio"
+                   id="i7"
+                   name="procesador"
+                   value="i7">
+
+            <label for="i7">Intel Core i7</label>
+
+            <br>
+
+            <input type="radio"
+                   id="ryzen7"
+                   name="procesador"
+                   value="ryzen7">
+
+            <label for="ryzen7">AMD Ryzen 7</label>
+
+            <br><br>
+
+
+            <!-- Memoria RAM -->
+            <label for="ram">Memoria RAM:</label>
+
+            <select id="ram" name="ram">
+
+                <option value="8">8 GB</option>
+                <option value="16">16 GB</option>
+                <option value="32">32 GB</option>
+
+            </select>
+
+            <br><br>
+
+
+            <!-- Extras -->
+            <p>Extras:</p>
+
+            <input type="checkbox"
+                   id="raton"
+                   name="extras"
+                   value="raton">
+
+            <label for="raton">Ratón inalámbrico</label>
+
+            <br>
+
+            <input type="checkbox"
+                   id="mochila"
+                   name="extras"
+                   value="mochila">
+
+            <label for="mochila">Mochila</label>
+
+            <br>
+
+            <input type="checkbox"
+                   id="disco"
+                   name="extras"
+                   value="disco">
+
+            <label for="disco">Disco externo</label>
+
+            <br>
+
+            <input type="checkbox"
+                   id="garantia"
+                   name="extras"
+                   value="garantia">
+
+            <label for="garantia">Ampliación de garantía</label>
+
+        </fieldset>
+
+        <br>
+
+
+        <!-- ENTREGA -->
+        <fieldset>
+
+            <legend>Entrega</legend>
+
+            <!-- Fecha -->
+            <label for="fecha">Fecha de entrega deseada:</label>
+
+            <input type="date"
+                   id="fecha"
+                   name="fecha">
+
+            <br><br>
+
+
+            <!-- Franja horaria -->
+            <label for="franja">Franja horaria:</label>
+
+            <select id="franja" name="franja">
+
+                <option value="mañana">Mañana</option>
+                <option value="tarde">Tarde</option>
+
+            </select>
+
+            <br><br>
+
+
+            <!-- Dirección -->
+            <label for="direccion">Dirección de entrega:</label>
+
+            <br>
+
+            <textarea id="direccion"
+                      name="direccion"
+                      rows="5"
+                      cols="40"></textarea>
+
+        </fieldset>
+
+        <br>
+
+
+        <!-- BOTONES -->
+        <button type="submit">Realizar pedido</button>
+
+        <button type="reset">Restablecer</button>
+
+    </form>
+
+</body>
+
+</html>
