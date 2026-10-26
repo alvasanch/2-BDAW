@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Galería de fotos</title>
+</head>
+<body>
+
+    <h1>Mi galería de fotos</h1>
+
+    <img id="foto"
+         src="https://picsum.photos/id/1015/500/300"
+         alt="Foto de la galería"
+         width="500"
+         height="300">
+
+    <p id="contador">Foto 1 de 5</p>
+
+    <button id="anterior" onclick="retroceder()" disabled>
+        Retroceder
+    </button>
+
+    <button id="siguiente" onclick="avanzar()">
+        Avanzar
+    </button>
+
+    <script src="ej4_galeria_fotos.js"></script>
+
+</body>
+</html>

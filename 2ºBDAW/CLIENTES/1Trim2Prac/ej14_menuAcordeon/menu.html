@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú en tonos azules</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaf4ff;
+            margin: 0;
+            padding: 40px;
+        }
+
+        nav {
+            width: 250px;
+            background-color: #123b66;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Lista principal */
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav > ul > li {
+            margin-bottom: 8px;
+        }
+
+        /* Enlaces principales */
+        nav > ul > li > a {
+            display: block;
+            padding: 12px 15px;
+            color: white;
+            background-color: #1769aa;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+        }
+
+        nav > ul > li > a:hover {
+            background-color: #3498db;
+        }
+
+        /* Submenús */
+        nav ul ul {
+            padding: 8px 0 8px 20px;
+        }
+
+        nav ul ul li {
+            margin: 5px 0;
+        }
+
+        nav ul ul a {
+            display: block;
+            padding: 7px 10px;
+            color: #c9e5ff;
+            text-decoration: none;
+            border-left: 3px solid #5dade2;
+            transition: all 0.3s;
+        }
+
+        nav ul ul a::before {
+            content: "◦ ";
+            color: #5dade2;
+        }
+
+        nav ul ul a:hover {
+            color: white;
+            background-color: #20558a;
+            padding-left: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#inicio">Inicio</a>
+                <ul>
+                    <li><a href="#portada">Portada</a></li>
+                    <li><a href="#acerca">Acerca de mi</a></li>
+                    <li><a href="#fotos">Mis fotos</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#proyectos">Proyectos</a>
+                <ul>
+                    <li><a href="#web-apps">Web Apps</a></li>
+                    <li><a href="#mobile-apps">Mobile Apps</a></li>
+                    <li><a href="#juegos">Juegos</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#portfolio">Portfolio</a>
+                <ul>
+                    <li><a href="#paginas-webs">Páginas webs</a></li>
+                    <li><a href="#software">Software</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#contacto">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+</html>
