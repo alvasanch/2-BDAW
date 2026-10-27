@@ -1,0 +1,60 @@
+body {
+    font-family: Georgia, serif;
+}
+
+h1 {
+    font-size: 38px;
+    text-align: center;
+    color: darkblue;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ul ul {
+    list-style-type: circle;
+}
+
+ul > li {
+    font-weight: bold;
+}
+
+ul ul li {
+    font-weight: normal;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid gray;
+}
+
+th {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+}
+
+td:first-child {
+    font-weight: bold;
+    text-align: left;
+}
+
+td:nth-child(2), td:nth-child(3) {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eeeeee;
+}

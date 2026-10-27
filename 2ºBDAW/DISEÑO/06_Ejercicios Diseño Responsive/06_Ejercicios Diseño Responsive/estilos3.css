@@ -1,0 +1,29 @@
+nav {
+    background-color: #333;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
+}

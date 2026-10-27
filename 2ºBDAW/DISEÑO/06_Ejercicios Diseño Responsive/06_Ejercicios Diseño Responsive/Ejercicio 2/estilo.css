@@ -1,0 +1,33 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,td {
+    border: 1px solid black;
+}
+
+@media screen and (min-width: 1201px) {
+    /* Se muestran las cinco columnas */
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+    .priority-5 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 900px) {
+    .priority-4,
+    .priority-5 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .priority-3,
+    .priority-4,
+    .priority-5 {
+        display: none;
+    }
+}
